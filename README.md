@@ -109,5 +109,5 @@ Since there are a lot of dependencies on these images, please understand that it
 
 We'd love to have your help, but it might be best to explain your intentions first before contributing.
 
-### Like we said -- we're always learning
+### Report a security issue
 If you find a critical security flaw, please open an issue or learn more about [our responsible disclosure policy](https://www.notion.so/Responsible-Disclosure-Policy-421a6a3be1714d388ebbadba7eebbdc8).
