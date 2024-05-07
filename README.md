@@ -99,6 +99,12 @@ Here are some examples of how to use this Docker image:
 These examples should help you get started with generating passwords securely using the Docker container.
 
 # Submitting issues and pull requests
+Please feel free to open an issue or submit a pull request if you encounter any problems. We're always learning and open to suggestions.
+
+### Submit an issue
+If you find a bug or issue, please [submit an issue →](https://github.com/serversideup/docker-mkpasswd/issues/new)
+
+### Submit a pull request
 Since there are a lot of dependencies on these images, please understand that it can make it complicated on merging your pull request.
 
 We'd love to have your help, but it might be best to explain your intentions first before contributing.
