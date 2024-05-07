@@ -31,7 +31,7 @@ jobs:
           DOCKER_USER: ${{ secrets.DOCKER_HUB_README_USERNAME }}
           DOCKER_PASS: ${{ secrets.DOCKER_HUB_README_PASSWORD }}
         with:
-          destination_container_repo: serversideup/docker-mkpasswd
+          destination_container_repo: serversideup/mkpasswd
           provider: dockerhub
           short_description: 'Simple mkpasswd container. Great for generating password .'
           readme_file: 'README.md'
