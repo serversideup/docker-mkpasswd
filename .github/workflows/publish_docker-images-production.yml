@@ -2,8 +2,9 @@ name: Docker Publish
 
 on:
   workflow_dispatch:
-  branch:
-    - main
+  push:
+    branches:
+      - main
   schedule:
     - cron: '0 8 * * 2'
 
