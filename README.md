@@ -33,12 +33,9 @@ All of our software is free an open to the world. None of this can be brought to
 This repository contains the Dockerfile for the `mkpasswd` image. This image is based on the `whois` package and allows you to generate secure passwords using the `mkpasswd` command.
 
 # Available Docker Images
-This is a list of the docker images this repository creates:
+Use the `latest` tag to get the latest stable release of the image.
 
-| 🏷️ Tag                                                          | ℹ️ Description          |
-|-----------------------------------------------------------------|------------------------|
-| [latest](https://hub.docker.com/r/serversideup/docker-mkpasswd/tags) | Use the latest version |
-
+![Docker Image Size](https://img.shields.io/docker/image-size/serversideup/mkpasswd)
 
 ## Usage
 
