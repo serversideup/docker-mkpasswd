@@ -35,7 +35,7 @@ This repository contains the Dockerfile for the `mkpasswd` image. This image is 
 # Available Docker Images
 Use the `latest` tag to get the latest stable release of the image.
 
-![Docker Image Size](https://img.shields.io/docker/image-size/serversideup/mkpasswd)
+<a href="https://hub.docker.com/r/serversideup/mkpasswd/tags"><img alt="Docker Image Size" src="https://img.shields.io/docker/image-size/serversideup/mkpasswd"></a>
 
 ## Usage
 
