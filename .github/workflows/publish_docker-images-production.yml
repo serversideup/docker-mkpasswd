@@ -33,5 +33,5 @@ jobs:
         with:
           destination_container_repo: serversideup/mkpasswd
           provider: dockerhub
-          short_description: 'Simple mkpasswd container. Great for generating password .'
+          short_description: 'A simple and lightweight mkpasswd image based on Alpine. Great for generating password hashes.'
           readme_file: 'README.md'
