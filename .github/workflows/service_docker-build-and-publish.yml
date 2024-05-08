@@ -34,4 +34,4 @@ jobs:
             linux/arm64/v8
           pull: true
           push: true
-          tags: "${{ inputs.tags}}"
+          tags: "${{ inputs.tags }}"
