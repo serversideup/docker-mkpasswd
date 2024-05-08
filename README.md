@@ -39,7 +39,7 @@ Use the `latest` tag to get the latest stable release of the image.
 
 ## Usage
 
-This Docker container allows you to generate passwords using `mkpasswd` from the `whois` package with customizable options.
+This Docker container allows you to generate passwords using [`mkpasswd`](https://pkgs.alpinelinux.org/package/edge/community/x86/mkpasswd) from the `whois` package with customizable options.
 
 ### Running the Container
 
@@ -55,14 +55,25 @@ This command will output a salted hash which you can use directly.
 
 #### Specifying a Method
 
-To specify a different hashing method, you can provide the `--method` option followed by the method name. Supported methods include `sha-512`, `md5`, among others.
+To specify a different hashing method, you can provide the `--method` option followed by the method name.
 
 ```bash
-docker run --rm serversideup/mkpasswd --method=md5
+docker run --rm serversideup/mkpasswd --method=md5crypt
 ```
 
-This will generate a hash using the MD5 method.
+#### Available methods
 
+| Method Name  | Hash  |
+|-------------|-------|
+| sha512crypt | SHA-512 |
+| sha256crypt | SHA-256 |
+| md5crypt    | MD5    |
+| descrypt    | standard 56 bit DES-based crypt(3)    |
+
+You can always run the `-m help` command to view all available methods.
+```
+docker run --rm -it serversideup/mkpasswd -m help
+```
 #### Adding Salt
 
 To add a specific salt, use the `-S` option followed by your desired salt value.
@@ -88,7 +99,7 @@ Here are some examples of how to use this Docker image:
 
 - **Generate a hash using MD5 without a salt**:
   ```bash
-  docker run --rm serversideup/mkpasswd --method=md5
+  docker run --rm serversideup/mkpasswd --method=md5crypt
   ```
 
 - **Generate a hash using SHA-512 with a specified salt**:
