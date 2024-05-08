@@ -6,4 +6,4 @@ RUN apk add --no-cache mkpasswd
 ENTRYPOINT ["mkpasswd"]
 
 # Set CMD to an empty array to ensure no additional arguments are passed by default.
-CMD []
+CMD ["-m", "sha512crypt"]
