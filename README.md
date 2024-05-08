@@ -46,7 +46,7 @@ This Docker container allows you to generate passwords using [`mkpasswd`](https:
 You can run this Docker container directly using the command line. By default, it uses SHA-512 as the hashing method.
 
 ```bash
-docker run --rm serversideup/mkpasswd
+docker run --rm -it serversideup/mkpasswd
 ```
 
 This command will output a salted hash which you can use directly.
@@ -58,7 +58,7 @@ This command will output a salted hash which you can use directly.
 To specify a different hashing method, you can provide the `--method` option followed by the method name.
 
 ```bash
-docker run --rm serversideup/mkpasswd --method=md5crypt
+docker run --rm -it serversideup/mkpasswd --method=md5crypt
 ```
 
 #### Available methods
@@ -79,7 +79,7 @@ docker run --rm -it serversideup/mkpasswd -m help
 To add a specific salt, use the `-S` option followed by your desired salt value.
 
 ```bash
-docker run --rm serversideup/mkpasswd --method=sha-512 -S mysalt
+docker run --rm -it serversideup/mkpasswd --method=sha-512 -S mysalt
 ```
 
 This command uses SHA-512 with a custom salt, enhancing the security of the generated hash.
@@ -94,17 +94,17 @@ Here are some examples of how to use this Docker image:
 
 - **Generate a default SHA-512 salted hash**:
   ```bash
-  docker run --rm serversideup/mkpasswd
+  docker run --rm -it serversideup/mkpasswd
   ```
 
 - **Generate a hash using MD5 without a salt**:
   ```bash
-  docker run --rm serversideup/mkpasswd --method=md5crypt
+  docker run --rm -it serversideup/mkpasswd --method=md5crypt
   ```
 
 - **Generate a hash using SHA-512 with a specified salt**:
   ```bash
-  docker run --rm serversideup/mkpasswd --method=sha-512 -S mysalt
+  docker run --rm -it serversideup/mkpasswd --method=sha-512 -S mysalt
   ```
 
 These examples should help you get started with generating passwords securely using the Docker container.
