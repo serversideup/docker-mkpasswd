@@ -1,7 +1,6 @@
 FROM alpine:3.19
 
-# Install whois package which contains mkpasswd
-RUN apk add --no-cache whois
+RUN apk add --no-cache mkpasswd
 
 # Set mkpasswd as the entrypoint, any CMD or runtime arguments will be passed to it
 ENTRYPOINT ["mkpasswd"]
